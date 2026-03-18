@@ -1,0 +1,116 @@
+{
+  "Mumbai": {
+    "Agra": {
+      "flight": { "price": 6000, "duration": "2h" },
+      "train": { "price": 1800, "duration": "18h" }
+    },
+    "Delhi": {
+      "flight": { "price": 5000, "duration": "2h" },
+      "train": { "price": 2200, "duration": "16h" }
+    },
+    "Jaipur": {
+      "flight": { "price": 5500, "duration": "2h" },
+      "train": { "price": 2000, "duration": "17h" }
+    },
+    "Hyderabad": {
+      "flight": { "price": 3500, "duration": "1.5h" },
+      "train": { "price": 1200, "duration": "12h" }
+    },
+    "Aurangabad": {
+      "flight": { "price": 2500, "duration": "1h" },
+      "train": { "price": 900, "duration": "8h" }
+    },
+    "Amritsar": {
+      "flight": { "price": 6500, "duration": "2.5h" },
+      "train": { "price": 2300, "duration": "22h" }
+    },
+    "Lucknow": {
+      "flight": { "price": 5500, "duration": "2h" },
+      "train": { "price": 2100, "duration": "20h" }
+    },
+    "Kolkata": {
+      "flight": { "price": 6000, "duration": "2.5h" },
+      "train": { "price": 2500, "duration": "26h" }
+    },
+    "Mysore": {
+      "flight": { "price": 4500, "duration": "1.5h" },
+      "train": { "price": 1800, "duration": "20h" }
+    },
+    "Goa": {
+      "flight": { "price": 3000, "duration": "1h" },
+      "train": { "price": 1000, "duration": "10h" }
+    }
+  },
+
+  "Delhi": {
+    "Agra": {
+      "train": { "price": 800, "duration": "2h" },
+      "bus": { "price": 600, "duration": "4h" }
+    },
+    "Jaipur": {
+      "train": { "price": 900, "duration": "5h" },
+      "bus": { "price": 700, "duration": "6h" }
+    },
+    "Amritsar": {
+      "flight": { "price": 3500, "duration": "1h" },
+      "train": { "price": 1200, "duration": "8h" }
+    },
+    "Lucknow": {
+      "flight": { "price": 3200, "duration": "1h" },
+      "train": { "price": 1100, "duration": "7h" }
+    },
+    "Khajuraho": {
+      "flight": { "price": 4200, "duration": "1.5h" },
+      "train": { "price": 1400, "duration": "10h" }
+    }
+  },
+
+  "Hyderabad": {
+    "Agra": {
+      "flight": { "price": 5200, "duration": "2h" },
+      "train": { "price": 2000, "duration": "20h" }
+    },
+    "Delhi": {
+      "flight": { "price": 4500, "duration": "2h" },
+      "train": { "price": 1800, "duration": "22h" }
+    },
+    "Jaipur": {
+      "flight": { "price": 5000, "duration": "2h" },
+      "train": { "price": 2100, "duration": "24h" }
+    },
+    "Aurangabad": {
+      "flight": { "price": 2800, "duration": "1h" },
+      "train": { "price": 900, "duration": "9h" }
+    }
+  },
+
+  "Kolkata": {
+    "Delhi": {
+      "flight": { "price": 5200, "duration": "2h" },
+      "train": { "price": 2100, "duration": "18h" }
+    },
+    "Agra": {
+      "flight": { "price": 6000, "duration": "2.5h" },
+      "train": { "price": 2300, "duration": "22h" }
+    },
+    "Jaipur": {
+      "flight": { "price": 6200, "duration": "2.5h" },
+      "train": { "price": 2500, "duration": "25h" }
+    }
+  },
+
+  "Bangalore": {
+    "Mysore": {
+      "train": { "price": 300, "duration": "3h" },
+      "bus": { "price": 400, "duration": "3h" }
+    },
+    "Hyderabad": {
+      "flight": { "price": 3500, "duration": "1h" },
+      "train": { "price": 900, "duration": "10h" }
+    },
+    "Delhi": {
+      "flight": { "price": 6000, "duration": "2.5h" },
+      "train": { "price": 2300, "duration": "36h" }
+    }
+  }
+}

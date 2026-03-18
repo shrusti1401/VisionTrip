@@ -1,0 +1,303 @@
+{
+  "AjantaCaves": {
+    "city": "Aurangabad",
+    "hotels": [
+      {"name":"Hotel Kailas Ajanta","budget":"cheap","distance":"1 km","costPerNight":1500},
+      {"name":"MTDC Ajanta Tourist Resort","budget":"cheap","distance":"0.5 km","costPerNight":1600},
+      {"name":"Hotel Ajanta","budget":"cheap","distance":"1.2 km","costPerNight":1400},
+      {"name":"The Meadows Resort","budget":"moderate","distance":"3 km","costPerNight":4000},
+      {"name":"Ambassador Ajanta","budget":"moderate","distance":"4 km","costPerNight":4500},
+      {"name":"Lemon Tree Hotel Aurangabad","budget":"moderate","distance":"5 km","costPerNight":5000},
+      {"name":"Vivanta Aurangabad","budget":"luxury","distance":"6 km","costPerNight":12000},
+      {"name":"Welcomhotel Rama International","budget":"luxury","distance":"7 km","costPerNight":14000}
+    ]
+  },
+  "alai_darwaza": {
+    "city": "Delhi",
+    "hotels": [
+      {"name":"Hotel Rockland Panchsheel","budget":"cheap","distance":"3 km","costPerNight":1500},
+      {"name":"Hotel Blue Castle","budget":"cheap","distance":"4 km","costPerNight":1600},
+      {"name":"Hotel Saket 27","budget":"cheap","distance":"3 km","costPerNight":1400},
+      {"name":"Lemon Tree Premier Saket","budget":"moderate","distance":"4 km","costPerNight":4000},
+      {"name":"Hilton Garden Inn Saket","budget":"moderate","distance":"3.5 km","costPerNight":4500},
+      {"name":"The Suryaa New Delhi","budget":"moderate","distance":"6 km","costPerNight":5000},
+      {"name":"Sheraton New Delhi","budget":"luxury","distance":"3 km","costPerNight":13000},
+      {"name":"Taj Palace New Delhi","budget":"luxury","distance":"9 km","costPerNight":15000}
+    ]
+  },
+  "alai_minar": {
+    "city": "Delhi",
+    "hotels": [
+      {"name":"Hotel Saket 27","budget":"cheap","distance":"3 km","costPerNight":1400},
+      {"name":"Hotel Blue Castle","budget":"cheap","distance":"4 km","costPerNight":1600},
+      {"name":"Hotel Rockland Panchsheel","budget":"cheap","distance":"3 km","costPerNight":1500},
+      {"name":"Hilton Garden Inn Saket","budget":"moderate","distance":"3 km","costPerNight":4500},
+      {"name":"Lemon Tree Premier Saket","budget":"moderate","distance":"4 km","costPerNight":4000},
+      {"name":"The Suryaa New Delhi","budget":"moderate","distance":"6 km","costPerNight":5000},
+      {"name":"Sheraton New Delhi","budget":"luxury","distance":"3 km","costPerNight":13000},
+      {"name":"Taj Palace New Delhi","budget":"luxury","distance":"9 km","costPerNight":15000}
+    ]
+  },
+  "basilica_of_bom_jesus": {
+    "city": "Goa",
+    "hotels": [
+      {"name":"Hotel Arcadia","budget":"cheap","distance":"2 km","costPerNight":1500},
+      {"name":"Hotel Viva Panjim","budget":"cheap","distance":"4 km","costPerNight":1400},
+      {"name":"Hotel La Capitol","budget":"cheap","distance":"3 km","costPerNight":1300},
+      {"name":"Country Inn Goa Candolim","budget":"moderate","distance":"10 km","costPerNight":4000},
+      {"name":"Fortune Miramar Goa","budget":"moderate","distance":"9 km","costPerNight":4500},
+      {"name":"The Golden Crown Hotel","budget":"moderate","distance":"12 km","costPerNight":4800},
+      {"name":"Taj Exotica Resort & Spa","budget":"luxury","distance":"25 km","costPerNight":15000},
+      {"name":"The Leela Goa","budget":"luxury","distance":"30 km","costPerNight":16000}
+    ]
+  },
+  "Charar-E-Sharif": {
+    "city": "Srinagar",
+    "hotels": [
+      {"name":"Hotel Asian Park","budget":"cheap","distance":"30 km","costPerNight":1200},
+      {"name":"Hotel Sadaf","budget":"cheap","distance":"28 km","costPerNight":1300},
+      {"name":"Houseboat New Golden Flower","budget":"cheap","distance":"32 km","costPerNight":1400},
+      {"name":"Radisson Srinagar","budget":"moderate","distance":"29 km","costPerNight":4000},
+      {"name":"Four Points by Sheraton Srinagar","budget":"moderate","distance":"27 km","costPerNight":4500},
+      {"name":"Lemon Tree Hotel Srinagar","budget":"moderate","distance":"26 km","costPerNight":5000},
+      {"name":"The Lalit Grand Palace","budget":"luxury","distance":"31 km","costPerNight":13000},
+      {"name":"Vivanta Dal View","budget":"luxury","distance":"33 km","costPerNight":14000}
+    ]
+  },
+  "charminar": {
+    "city": "Hyderabad",
+    "hotels": [
+      {"name":"Hotel Haridwar","budget":"cheap","distance":"0.8 km","costPerNight":1200},
+      {"name":"Hotel Geetanjali","budget":"cheap","distance":"1 km","costPerNight":1400},
+      {"name":"Hotel Vaishnaoi","budget":"cheap","distance":"1.2 km","costPerNight":1500},
+      {"name":"Lemon Tree Hotel Hyderabad","budget":"moderate","distance":"3 km","costPerNight":4000},
+      {"name":"Hyderabad Marriott Hotel","budget":"moderate","distance":"5 km","costPerNight":4500},
+      {"name":"Radisson Hyderabad Hitec City","budget":"moderate","distance":"6 km","costPerNight":5000},
+      {"name":"Taj Falaknuma Palace","budget":"luxury","distance":"4 km","costPerNight":15000},
+      {"name":"Park Hyatt Hyderabad","budget":"luxury","distance":"7 km","costPerNight":16000}
+    ]
+  },
+  "Chhota_Imambara": {
+    "city": "Lucknow",
+    "hotels": [
+      {"name":"Hotel Shelter","budget":"cheap","distance":"2 km","costPerNight":1200},
+      {"name":"Hotel Deep Palace","budget":"cheap","distance":"3 km","costPerNight":1300},
+      {"name":"Hotel Charans Plaza","budget":"cheap","distance":"4 km","costPerNight":1400},
+      {"name":"Golden Tulip Lucknow","budget":"moderate","distance":"5 km","costPerNight":4000},
+      {"name":"Lemon Tree Hotel Lucknow","budget":"moderate","distance":"4 km","costPerNight":4500},
+      {"name":"Renaissance Lucknow Hotel","budget":"moderate","distance":"6 km","costPerNight":5000},
+      {"name":"Hyatt Regency Lucknow","budget":"luxury","distance":"7 km","costPerNight":12000},
+      {"name":"Taj Mahal Lucknow","budget":"luxury","distance":"8 km","costPerNight":13000}
+    ]
+  },
+  "Ellora Caves": {
+    "city": "Aurangabad",
+    "hotels": [
+      {"name":"Hotel Kailas Ellora","budget":"cheap","distance":"0.6 km","costPerNight":1500},
+      {"name":"MTDC Ellora Resort","budget":"cheap","distance":"1 km","costPerNight":1600},
+      {"name":"Hotel Shanti","budget":"cheap","distance":"1.5 km","costPerNight":1400},
+      {"name":"The Fern Residency Aurangabad","budget":"moderate","distance":"3 km","costPerNight":4500},
+      {"name":"Ambassador Ajanta","budget":"moderate","distance":"4 km","costPerNight":4500},
+      {"name":"Lemon Tree Hotel Aurangabad","budget":"moderate","distance":"5 km","costPerNight":5000},
+      {"name":"Vivanta Aurangabad","budget":"luxury","distance":"6 km","costPerNight":12000},
+      {"name":"Welcomhotel Rama International","budget":"luxury","distance":"7 km","costPerNight":14000}
+    ]
+  },
+  "Fatehpur Sikri": {
+    "city": "Agra",
+    "hotels": [
+      {"name":"Goverdhan Tourist Complex","budget":"cheap","distance":"0.5 km","costPerNight":1200},
+      {"name":"Hotel Vrindavan","budget":"cheap","distance":"1 km","costPerNight":1500},
+      {"name":"Hotel Sunset View","budget":"cheap","distance":"1.2 km","costPerNight":1400},
+      {"name":"Howard Plaza The Fern","budget":"moderate","distance":"35 km","costPerNight":4500},
+      {"name":"Hotel Clarks Shiraz","budget":"moderate","distance":"36 km","costPerNight":4800},
+      {"name":"Crystal Sarovar Premiere","budget":"moderate","distance":"37 km","costPerNight":5000},
+      {"name":"ITC Mughal","budget":"luxury","distance":"38 km","costPerNight":14000},
+      {"name":"The Oberoi Amarvilas","budget":"luxury","distance":"39 km","costPerNight":16000}
+    ]
+  },
+  "Gateway of India": {
+    "city": "Mumbai",
+    "hotels": [
+      {"name":"Hotel Sea Shore","budget":"cheap","distance":"0.8 km","costPerNight":1500},
+      {"name":"Hotel Causeway","budget":"cheap","distance":"0.7 km","costPerNight":1400},
+      {"name":"Hotel Suba Palace","budget":"cheap","distance":"0.5 km","costPerNight":1300},
+      {"name":"The Gordon House Hotel","budget":"moderate","distance":"0.4 km","costPerNight":4000},
+      {"name":"Fariyas Hotel Mumbai","budget":"moderate","distance":"1 km","costPerNight":4500},
+      {"name":"President Mumbai","budget":"moderate","distance":"1.5 km","costPerNight":4800},
+      {"name":"The Taj Mahal Palace","budget":"luxury","distance":"0.1 km","costPerNight":15000},
+      {"name":"The Oberoi Mumbai","budget":"luxury","distance":"2 km","costPerNight":16000}
+    ]
+  },
+  "golden temple": {
+    "city": "Amritsar",
+    "hotels": [
+      {"name":"Hotel Temple View","budget":"cheap","distance":"0.3 km","costPerNight":1200},
+      {"name":"Hotel City Heart","budget":"cheap","distance":"0.5 km","costPerNight":1400},
+      {"name":"Hotel Sita Niwas","budget":"cheap","distance":"0.6 km","costPerNight":1500},
+      {"name":"Ramada Amritsar","budget":"moderate","distance":"1 km","costPerNight":4000},
+      {"name":"Golden Tulip Amritsar","budget":"moderate","distance":"2 km","costPerNight":4500},
+      {"name":"Fairfield by Marriott Amritsar","budget":"moderate","distance":"2.5 km","costPerNight":5000},
+      {"name":"Taj Swarna Amritsar","budget":"luxury","distance":"3 km","costPerNight":14000},
+      {"name":"Hyatt Regency Amritsar","budget":"luxury","distance":"4 km","costPerNight":15000}
+    ]
+  },
+  "Hawa mahal": {
+    "city": "Jaipur",
+    "hotels": [
+      {"name":"Hotel Pearl Palace","budget":"cheap","distance":"2 km","costPerNight":1500},
+      {"name":"Hotel Arya Niwas","budget":"cheap","distance":"1.8 km","costPerNight":1400},
+      {"name":"Hotel Kalyan","budget":"cheap","distance":"2 km","costPerNight":1600},
+      {"name":"Alsisar Haveli","budget":"moderate","distance":"2.2 km","costPerNight":4000},
+      {"name":"Four Points by Sheraton Jaipur","budget":"moderate","distance":"3 km","costPerNight":4500},
+      {"name":"Lemon Tree Premier Jaipur","budget":"moderate","distance":"3.5 km","costPerNight":4800},
+      {"name":"Rambagh Palace","budget":"luxury","distance":"4 km","costPerNight":15000},
+      {"name":"Fairmont Jaipur","budget":"luxury","distance":"10 km","costPerNight":16000}
+    ]
+  },
+  "Humayun_s Tomb": {
+    "city": "Delhi",
+    "hotels": [
+      {"name":"Hotel City Centre","budget":"cheap","distance":"2 km","costPerNight":1500},
+      {"name":"Bloomrooms New Delhi","budget":"cheap","distance":"3 km","costPerNight":1400},
+      {"name":"Hotel Hari Piorko","budget":"cheap","distance":"4 km","costPerNight":1300},
+      {"name":"The Suryaa New Delhi","budget":"moderate","distance":"3 km","costPerNight":4500},
+      {"name":"Lemon Tree Premier Delhi","budget":"moderate","distance":"4 km","costPerNight":4000},
+      {"name":"Radisson Blu Marina","budget":"moderate","distance":"6 km","costPerNight":5000},
+      {"name":"The Leela Palace","budget":"luxury","distance":"7 km","costPerNight":14000},
+      {"name":"Taj Palace New Delhi","budget":"luxury","distance":"8 km","costPerNight":15000}
+    ]
+  },
+  "India_gate": {
+    "city": "Delhi",
+    "hotels": [
+      {"name":"Hotel Bright","budget":"cheap","distance":"2 km","costPerNight":1500},
+      {"name":"Hotel Palace Heights","budget":"cheap","distance":"2.5 km","costPerNight":1400},
+      {"name":"Bloomrooms Janpath","budget":"cheap","distance":"3 km","costPerNight":1300},
+      {"name":"The Lalit New Delhi","budget":"moderate","distance":"2 km","costPerNight":4500},
+      {"name":"Le Meridien New Delhi","budget":"moderate","distance":"1 km","costPerNight":4000},
+      {"name":"Radisson Blu Marina","budget":"moderate","distance":"3 km","costPerNight":5000},
+      {"name":"The Leela Palace","budget":"luxury","distance":"6 km","costPerNight":14000},
+      {"name":"Taj Palace New Delhi","budget":"luxury","distance":"7 km","costPerNight":15000}
+    ]
+  },
+  "iron_pillar": {
+    "city": "Delhi",
+    "hotels": [
+      {"name":"Hotel Saket 27","budget":"cheap","distance":"4 km","costPerNight":1400},
+      {"name":"Hotel Blue Castle","budget":"cheap","distance":"5 km","costPerNight":1500},
+      {"name":"Hotel Rockland Panchsheel","budget":"cheap","distance":"3 km","costPerNight":1600},
+      {"name":"Lemon Tree Premier Saket","budget":"moderate","distance":"4 km","costPerNight":4000},
+      {"name":"Hilton Garden Inn Saket","budget":"moderate","distance":"3 km","costPerNight":4500},
+      {"name":"The Suryaa New Delhi","budget":"moderate","distance":"6 km","costPerNight":5000},
+      {"name":"Sheraton New Delhi","budget":"luxury","distance":"3 km","costPerNight":13000},
+      {"name":"Taj Palace New Delhi","budget":"luxury","distance":"9 km","costPerNight":15000}
+    ]
+  },
+  "jamali_kamali_tomb": {
+    "city": "Delhi",
+    "hotels": [
+      {"name":"Hotel Saket 27","budget":"cheap","distance":"4 km","costPerNight":1400},
+      {"name":"Hotel Blue Castle","budget":"cheap","distance":"5 km","costPerNight":1500},
+      {"name":"Hotel Rockland Panchsheel","budget":"cheap","distance":"3 km","costPerNight":1600},
+      {"name":"Lemon Tree Premier Saket","budget":"moderate","distance":"4 km","costPerNight":4000},
+      {"name":"Hilton Garden Inn Saket","budget":"moderate","distance":"3 km","costPerNight":4500},
+      {"name":"The Suryaa New Delhi","budget":"moderate","distance":"6 km","costPerNight":5000},
+      {"name":"Sheraton New Delhi","budget":"luxury","distance":"3 km","costPerNight":13000},
+      {"name":"Taj Palace New Delhi","budget":"luxury","distance":"9 km","costPerNight":15000}
+    ]
+  },
+  "Khajuraho": {
+    "city": "Khajuraho",
+    "hotels": [
+      {"name":"Hotel Harmony","budget":"cheap","distance":"1 km","costPerNight":1500},
+      {"name":"Hotel Surya Khajuraho","budget":"cheap","distance":"1.2 km","costPerNight":1400},
+      {"name":"Hotel Marble Palace","budget":"cheap","distance":"1.5 km","costPerNight":1300},
+      {"name":"Ramada Khajuraho","budget":"moderate","distance":"2 km","costPerNight":4000},
+      {"name":"Clarks Khajuraho","budget":"moderate","distance":"2.2 km","costPerNight":4500},
+      {"name":"The Lalit Temple View","budget":"moderate","distance":"2 km","costPerNight":4800},
+      {"name":"Radisson Hotel Khajuraho","budget":"luxury","distance":"2.5 km","costPerNight":14000},
+      {"name":"The Lalit Traveller Khajuraho","budget":"luxury","distance":"3 km","costPerNight":15000}
+    ]
+  },
+  "lotus_temple": {
+    "city": "Delhi",
+    "hotels": [
+      {"name":"Hotel Blue Castle","budget":"cheap","distance":"3 km","costPerNight":1500},
+      {"name":"Bloomrooms New Delhi","budget":"cheap","distance":"4 km","costPerNight":1400},
+      {"name":"Hotel Rockland Panchsheel","budget":"cheap","distance":"2 km","costPerNight":1600},
+      {"name":"The Suryaa New Delhi","budget":"moderate","distance":"2 km","costPerNight":4500},
+      {"name":"Lemon Tree Premier Delhi","budget":"moderate","distance":"3 km","costPerNight":4000},
+      {"name":"Radisson Blu Marina","budget":"moderate","distance":"6 km","costPerNight":5000},
+      {"name":"The Leela Palace","budget":"luxury","distance":"7 km","costPerNight":14000},
+      {"name":"Taj Palace New Delhi","budget":"luxury","distance":"8 km","costPerNight":15000}
+    ]
+  },
+  "mysore_palace": {
+    "city": "Mysore",
+    "hotels": [
+      {"name":"Hotel Roopa","budget":"cheap","distance":"1 km","costPerNight":1200},
+      {"name":"Hotel MB International","budget":"cheap","distance":"1.2 km","costPerNight":1400},
+      {"name":"Hotel Pai Vista","budget":"cheap","distance":"1.5 km","costPerNight":1500},
+      {"name":"Fortune JP Palace","budget":"moderate","distance":"2 km","costPerNight":4000},
+      {"name":"Grand Mercure Mysore","budget":"moderate","distance":"3 km","costPerNight":4500},
+      {"name":"Southern Star Mysore","budget":"moderate","distance":"2 km","costPerNight":4800},
+      {"name":"Radisson Blu Mysore","budget":"luxury","distance":"3 km","costPerNight":14000},
+      {"name":"Royal Orchid Metropole","budget":"luxury","distance":"2.5 km","costPerNight":15000}
+    ]
+  },
+  "qutub_minar": {
+    "city": "Delhi",
+    "hotels": [
+      {"name":"Hotel Saket 27","budget":"cheap","distance":"3 km","costPerNight":1400},
+      {"name":"Hotel Blue Castle","budget":"cheap","distance":"4 km","costPerNight":1500},
+      {"name":"Hotel Rockland Panchsheel","budget":"cheap","distance":"3 km","costPerNight":1600},
+      {"name":"Hilton Garden Inn Saket","budget":"moderate","distance":"3 km","costPerNight":4500},
+      {"name":"Lemon Tree Premier Saket","budget":"moderate","distance":"4 km","costPerNight":4000},
+      {"name":"The Suryaa New Delhi","budget":"moderate","distance":"6 km","costPerNight":5000},
+      {"name":"Sheraton New Delhi","budget":"luxury","distance":"3 km","costPerNight":13000},
+      {"name":"Taj Palace New Delhi","budget":"luxury","distance":"9 km","costPerNight":15000}
+    ]
+  },
+  "Sun Temple Konark": {
+    "city": "Konark",
+    "hotels": [
+      {"name":"Hotel Sun Temple","budget":"cheap","distance":"1 km","costPerNight":1500},
+      {"name":"Lotus Eco Resort Konark","budget":"cheap","distance":"2 km","costPerNight":1400},
+      {"name":"Hotel Shubham Beach","budget":"cheap","distance":"3 km","costPerNight":1300},
+      {"name":"Toshali Sands Resort","budget":"moderate","distance":"5 km","costPerNight":4500},
+      {"name":"Sterling Puri","budget":"moderate","distance":"30 km","costPerNight":4800},
+      {"name":"Mayfair Waves Puri","budget":"moderate","distance":"32 km","costPerNight":5000},
+      {"name":"Taj Puri Resort & Spa","budget":"luxury","distance":"35 km","costPerNight":15000},
+      {"name":"Mayfair Heritage Puri","budget":"luxury","distance":"33 km","costPerNight":16000}
+    ]
+  },
+  "tanjavur temple": {
+    "city": "Thanjavur",
+    "hotels": [
+      {"name":"Hotel Victoriyah","budget":"cheap","distance":"1 km","costPerNight":1200},
+      {"name":"Hotel Parisutham","budget":"cheap","distance":"1.2 km","costPerNight":1400},
+      {"name":"Hotel Gnanam","budget":"cheap","distance":"1.5 km","costPerNight":1300},
+      {"name":"Sangam Hotel Thanjavur","budget":"moderate","distance":"2 km","costPerNight":4000},
+      {"name":"Hotel Naadi Stay Inn","budget":"moderate","distance":"2 km","costPerNight":4500},
+      {"name":"Hotel Svatma","budget":"moderate","distance":"1.8 km","costPerNight":4800},
+      {"name":"Great Trails Riverview Resort","budget":"luxury","distance":"4 km","costPerNight":15000},
+      {"name":"Ideal River View Resort","budget":"luxury","distance":"5 km","costPerNight":16000}
+    ]
+  },
+  "victoria memorial": {
+    "city": "Kolkata",
+    "hotels": [
+      {"name":"Hotel Kempton","budget":"cheap","distance":"1.5 km","costPerNight":1200},
+      {"name":"Hotel VIP International","budget":"cheap","distance":"1.7 km","costPerNight":1300},
+      {"name":"Hotel Afreen","budget":"cheap","distance":"1.8 km","costPerNight":1400},
+      {"name":"Kenilworth Hotel Kolkata","budget":"moderate","distance":"1 km","costPerNight":4000},
+      {"name":"The Peerless Inn","budget":"moderate","distance":"2 km","costPerNight":4500},
+      {"name":"Park Prime Kolkata","budget":"moderate","distance":"2.2 km","costPerNight":4800},
+      {"name":"Taj Bengal Kolkata","budget":"luxury","distance":"1.2 km","costPerNight":15000},
+      {"name":"The Oberoi Grand Kolkata","budget":"luxury","distance":"2.5 km","costPerNight":16000}
+    ]
+  }
+  
+  
+}

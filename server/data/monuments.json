@@ -1,0 +1,122 @@
+{
+  "AjantaCaves": {
+    "city": "Aurangabad",
+    "airport": "IXU",
+    "railway": "AWB"
+  },
+  "alai_darwaza": {
+    "city": "Delhi",
+    "airport": "DEL",
+    "railway": "NDLS"
+  },
+  "alai_minar": {
+    "city": "Delhi",
+    "airport": "DEL",
+    "railway": "NDLS"
+  },
+  "basilica_of_bom_jesus": {
+    "city": "Goa",
+    "airport": "GOI",
+    "railway": "MAO"
+  },
+  "Charar-E-Sharif": {
+    "city": "Srinagar",
+    "airport": "SXR",
+    "railway": "SINA"
+  },
+  "charminar": {
+    "city": "Hyderabad",
+    "airport": "HYD",
+    "railway": "HYB"
+  },
+  "Chhota_Imambara": {
+    "city": "Lucknow",
+    "airport": "LKO",
+    "railway": "LJN"
+  },
+  "Ellora Caves": {
+    "city": "Aurangabad",
+    "airport": "IXU",
+    "railway": "AWB"
+  },
+  "Fatehpur Sikri": {
+    "city": "Agra",
+    "airport": "AGR",
+    "railway": "AGC"
+  },
+  "Gateway of India": {
+    "city": "Mumbai",
+    "airport": "BOM",
+    "railway": "CSTM"
+  },
+  "golden temple": {
+    "city": "Amritsar",
+    "airport": "ATQ",
+    "railway": "ASR"
+  },
+  "Hawa mahal": {
+    "city": "Jaipur",
+    "airport": "JAI",
+    "railway": "JP"
+  },
+  "Humayun_s Tomb": {
+    "city": "Delhi",
+    "airport": "DEL",
+    "railway": "NDLS"
+  },
+  "India_gate": {
+    "city": "Delhi",
+    "airport": "DEL",
+    "railway": "NDLS"
+  },
+  "iron_pillar": {
+    "city": "Delhi",
+    "airport": "DEL",
+    "railway": "NDLS"
+  },
+  "jamali_kamali_tomb": {
+    "city": "Delhi",
+    "airport": "DEL",
+    "railway": "NDLS"
+  },
+  "Khajuraho": {
+    "city": "Khajuraho",
+    "airport": "HJR",
+    "railway": "KURJ"
+  },
+  "lotus_temple": {
+    "city": "Delhi",
+    "airport": "DEL",
+    "railway": "NDLS"
+  },
+  "mysore_palace": {
+    "city": "Mysore",
+    "airport": "MYQ",
+    "railway": "MYS"
+  },
+  "qutub_minar": {
+    "city": "Delhi",
+    "airport": "DEL",
+    "railway": "NDLS"
+  },
+  "Sun Temple Konark": {
+    "city": "Konark",
+    "airport": "BBI",
+    "railway": "PURI"
+  },
+  "TajMahal": {
+    "city": "Agra",
+    "airport": "AGR",
+    "railway": "AGC"
+  },
+  "tanjavur temple": {
+    "city": "Thanjavur",
+    "airport": "TRZ",
+    "railway": "TJ"
+  },
+  "victoria memorial": {
+    "city": "Kolkata",
+    "airport": "CCU",
+    "railway": "HWH"
+  }
+}

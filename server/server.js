@@ -1,203 +1,187 @@
 import "dotenv/config";
 import express from "express";
 import cors from "cors";
-import fetch from "node-fetch";
-import { GoogleGenerativeAI } from "@google/generative-ai";
+import monumentAgent from "./agents/monumentAgent.js";
+import hotelsData from "./data/hotels.json" with { type: "json" };
 
 const app = express();
-app.use(cors());
+const PORT = process.env.PORT || 5000;
+
+/* ---------------- Middleware ---------------- */
+
+app.use(cors({
+  origin: "http://localhost:5173",
+  methods: ["GET", "POST"],
+  credentials: true
+}));
+
 app.use(express.json());
 
-const PORT = process.env.PORT || 5000;
-const API_KEY = process.env.GOOGLE_API_KEY;
-const ORS_KEY = process.env.ORS_API_KEY;
+/* ---------------- Health Check ---------------- */
 
-if (!API_KEY) {
-  console.error("❌ Set GOOGLE_API_KEY in your .env file");
-  process.exit(1);
-}
-
-if (!ORS_KEY) {
-  console.error("❌ Set ORS_API_KEY in your .env file");
-  process.exit(1);
-}
-
-// ================= GEMINI INIT =================
-const genAI = new GoogleGenerativeAI(API_KEY);
-const model = genAI.getGenerativeModel({ model: "gemini-2.5-flash" });
-
-// ---------------- HEALTH ----------------
 app.get("/", (req, res) => {
-  res.send("🚀 Travel Planner Backend running");
+  res.json({
+    status: "running",
+    message: "Travel Planner Backend running"
+  });
 });
 
-// ================= DESTINATION INFO =================
-app.post("/destination-info", async (req, res) => {
+/* ---------------- Destination Info ---------------- */
+
+app.post("/destination-info", (req, res) => {
+
   const { place } = req.body;
 
-  const prompt = `
-Give short info about ${place}.
-Also provide nearest bus stop, train station and airport.
-
-Respond ONLY in JSON:
-
-{
- "name":"",
- "description":"",
- "bus":"",
- "train":"",
- "airport":""
-}
-`;
-
-  try {
-    const result = await model.generateContent(prompt);
-    const text = result.response.text();
-    const match = text.match(/\{[\s\S]*\}/);
-
-    res.json(JSON.parse(match[0]));
-  } catch (err) {
-    console.error(err);
-    res.status(500).json({ ok: false });
-  }
-});
-
-// ================= ITINERARY + HOTELS (SINGLE CALL) =================
-
-function buildPrompt(form) {
-  return `
-You are a professional travel planner.
-
-Create a complete travel plan.
-
-Destination: ${form.destination}
-Days: ${form.days}
-Budget: ${form.budget}
-Travelers: ${form.travelers}
-
-IMPORTANT:
-- Return ONLY valid JSON.
-- No markdown.
-- No explanations.
-- No extra text.
-- Hotels must match the budget level.
-- Return exactly 5 hotels.
-
-JSON FORMAT:
-
-{
-  "destination": "",
-  "summary": "",
-  "days": [
-    {
-      "day": 1,
-      "title": "",
-      "morning": "",
-      "afternoon": "",
-      "evening": "",
-      "tips": ""
-    }
-  ],
-  "estimated_cost": "",
-  "transport_suggestions": "",
-  "hotels": [
-    {
-      "name": "",
-      "price_range": "",
-      "rating": "",
-      "description": ""
-    }
-  ]
-}
-`;
-}
-
-app.post("/plan-trip", async (req, res) => {
-  try {
-    const result = await model.generateContent(buildPrompt(req.body));
-    const text = result.response.text();
-
-    const match = text.match(/\{[\s\S]*\}/);
-
-    if (!match) {
-      return res.json({ ok: false, message: "Invalid Gemini response" });
-    }
-
-    res.json({
-      ok: true,
-      itinerary: JSON.parse(match[0]),
+  if (!place) {
+    return res.json({
+      ok: false,
+      message: "Place required"
     });
-  } catch (err) {
-    console.error("Plan trip error:", err);
-    res.json({ ok: false });
   }
+
+  res.json({
+    ok: true,
+    data: {
+      name: place,
+      description: `${place} is a popular tourist destination known for its history, culture, and attractions.`,
+      bus: `${place} Bus Station`,
+      train: `${place} Railway Station`,
+      airport: `${place} Airport`
+    }
+  });
+
 });
 
-// ================= GEMINI TRANSPORT =================
-app.post("/gemini-transport", async (req, res) => {
-  const { destination, type } = req.body;
+/* ---------------- AI Agent Booking ---------------- */
 
-  const prompt = `
-Nearest ${type} to ${destination}
+app.post("/api/agent/agent-book", (req, res) => {
 
-Return JSON ONLY:
+  try {
 
-{
- "name":"",
- "lat":0,
- "lng":0
+    const {
+      monument,
+      departureCity,
+      budget,
+      startDate,
+      endDate,
+      transportMode
+    } = req.body;
+
+    console.log("Incoming booking request:", req.body);
+  
+    const monumentInfo = monumentAgent(monument);
+
+if (!monumentInfo) {
+  return res.status(400).json({ error: "Monument not found" });
 }
-`;
 
-  try {
-    const result = await model.generateContent(prompt);
-    const text = result.response.text();
-    const match = text.match(/\{[\s\S]*\}/);
+const destinationCity = monumentInfo.city;
 
-    res.json({ ok: true, place: JSON.parse(match[0]) });
-  } catch (err) {
-    console.error(err);
-    res.json({ ok: false });
-  }
-});
+console.log("Detected destination city:", destinationCity);
 
-// ================= DISTANCE =================
-app.post("/distance", async (req, res) => {
-  const { from, to } = req.body;
+    //yaha se
+    const monumentHotels = hotelsData[monument];
 
-  try {
-    const response = await fetch(
-      "https://api.openrouteservice.org/v2/directions/driving-car",
-      {
-        method: "POST",
-        headers: {
-          Authorization: ORS_KEY,
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          coordinates: [
-            [from.lng, from.lat],
-            [to.lng, to.lat],
-          ],
-        }),
+    if (!monumentHotels) {
+      return res.status(400).json({ error: "No hotels found for this monument" });
+    }
+    //yaha tak
+
+    /* ---- Calculate nights safely ---- */
+
+    let nights = 1;
+
+    if (startDate && endDate) {
+
+      const start = new Date(startDate);
+      const end = new Date(endDate);
+
+      if (!isNaN(start) && !isNaN(end)) {
+
+        const diff = end.getTime() - start.getTime();
+
+        nights = Math.max(
+          1,
+          Math.ceil(diff / (1000 * 60 * 60 * 24))
+        );
       }
-    );
+    }
 
-    const data = await response.json();
-    const summary = data.routes[0].summary;
+    /* ---- Basic recommendation logic ---- */
+
+    const city = monument || "Unknown";
+
+    const transport = transportMode || "Train";
+
+    const hotel = "Recommended Hotel";
+
+    const totalCost = budget ? Number(budget) : 5000;
+
+    const withinBudget =
+      budget && totalCost > Number(budget)
+        ? { status: "exceeded" }
+        : { status: "ok" };
+
+    /* ---- Send booking response ---- */
 
     res.json({
-      ok: true,
-      distance_km: (summary.distance / 1000).toFixed(2),
-      duration_min: Math.round(summary.duration / 60),
+      city: destinationCity,
+      transport,
+      hotel,
+      nights,
+      totalCost,
+      withinBudget,
+      links: {
+        transport: `https://www.google.com/maps/search/flights+to+${encodeURIComponent(city)}`,
+        hotel: `https://www.booking.com/searchresults.html?ss=${encodeURIComponent(city)}`
+      }
     });
+
   } catch (err) {
-    console.error(err);
-    res.json({ ok: false });
+
+    console.error("Agent booking error:", err);
+
+    res.status(500).json({
+      error: "Booking failed"
+    });
+
   }
+
 });
 
-// ================= START =================
-app.listen(PORT, () =>
-  console.log(`✅ Server running http://localhost:${PORT}`)
-);
+/* ---------------- Dummy Transport API ---------------- */
+
+app.post("/gemini-transport", (req, res) => {
+
+  const { destination } = req.body;
+
+  const placeName = destination || "Location";
+
+  res.json({
+    ok: true,
+    place: {
+      name: `${placeName} Center`,
+      lat: 28.6139,
+      lng: 77.2090
+    }
+  });
+
+});
+
+/* ---------------- Dummy Distance API ---------------- */
+
+app.post("/distance", (req, res) => {
+
+  res.json({
+    ok: true,
+    distance_km: 5,
+    duration_min: 12
+  });
+
+});
+
+/* ---------------- Start Server ---------------- */
+
+app.listen(PORT, () => {
+  console.log(`✅ Server running at http://localhost:${PORT}`);
+});
